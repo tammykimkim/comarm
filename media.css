@@ -1,0 +1,120 @@
+
+/***************************+*********/
+/* @ Media Queries for Responsive		 */					
+/***************************+*********/
+/* Styles for screen 1070px and lower*/
+@media screen and (max-width: 1070px) {
+
+.logo {
+  padding-top: 0;
+}
+.logo img {
+  padding: 0;
+}
+  nav > ul {
+    text-align: center;
+    margin-right: 0;
+  }
+
+/***************************+**********/
+/* Portrait tablet and small desktops */        
+/***************************+**********/
+/*Styles for screen 800px and lower*/
+@media all and (max-width: 800px) {
+
+  .logo {
+    display: block;
+    float: none;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #173151;
+  }
+  .logo img {
+    box-shadow: none;
+  }
+  nav {
+    padding-top: 0;
+    height: auto;
+    background: linear-gradient(to right,#173151 0%,#336699 100%);
+  }
+
+}
+
+/***************************+**********/
+/* Landscape phone to portrait tablet */      
+/***************************+**********/
+/*Styles for screen 768px and lower*/
+@media all and (max-width: 768px) {
+
+
+}
+
+/***************************+**********/      
+/* Landscape phones and down          */
+/***************************+**********/
+/*Styles for screen 560px and lower*/
+@media all and  (max-width: 560px) {
+
+    nav, header:after {
+      display: none;
+      height: auto;
+      padding-top: 0;
+    }
+    nav .has-subnav > a:after {
+      top: 24px;
+    }
+    nav li {
+      width: 100%;
+      border-bottom: 1px solid #173151;
+    }
+    nav li:last-child {
+      border-bottom: none;
+    }
+    nav ul ul {
+      width: 100%;
+      border-bottom: 1px solid #173151;
+    }
+    .menu-text {
+      color: #fff;
+      position: relative;
+      text-align: right;
+      padding-right: 60px;
+      padding-top: 15px;
+      outline: 0;
+      border-bottom: 1px solid #173151;
+    }
+
+    .menu a#pull {
+      display: block;
+      width: 100%;
+      height: 50px;
+      position: relative;
+      background: #212647;
+      outline: 0;
+      z-index: 100;
+    }
+    .menu a#pull:after {
+      content: "";
+      background: url("images/nav-icon.png") no-repeat;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      outline: 0;
+      z-index: 110;
+    }
+}
+
+
+/***************************+**********/      
+/* Landscape phones and down          */
+/***************************+**********/
+/*Styles for screen 480px and lower*/
+@media all and (max-width: 480px) {
+
+}
+
+
+
