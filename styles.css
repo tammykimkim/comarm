@@ -51,10 +51,7 @@ img {
 
 /* Background images							
 /***********************************************/
-/*.bg-home {
-	height:100vh;
-	position: relative;
-}*/
+
 .bg {
 	background-size: 
 	 100%;
@@ -71,6 +68,7 @@ img {
 }
 .bg3 {
 	background: url("images/bg3.jpg") no-repeat 0 0 fixed;
+	background-size: cover;
 }
 .bg4 {
 	background: url("images/bg4.jpg") no-repeat 0 60px fixed;
@@ -99,21 +97,19 @@ header {
 header:after {
   content: '';
   background: #336699;
-  width: 50%;
+  width: 100%;
   height: 64px;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   z-index: -1;
 }
-
 .menu {
 	display: inline-block;
 	width: 100%;
 	height: 64px;
 	background:linear-gradient(to right,#173151 0%,#336699 100%);
 }
-
 .logo {
 	float: left;
 	display: inline;
@@ -150,6 +146,10 @@ nav > ul > li {
 }
 nav li {
   position: relative;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 nav li:hover,
@@ -157,18 +157,15 @@ nav li:hover,
   background: #212647;
 }
 nav li li:hover > a {
-  background: rgba(115,174,222,1);/* #73AEDE*/
+  background: rgba(115,174,222,1); #73AEDE
   color: #212647;
 }
+
 nav a {
   display: block;
   padding: 10px 20px;
   color: inherit;
   text-decoration: none;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 nav .has-subnav > a {
   padding-right: 30px;
@@ -211,7 +208,8 @@ nav li > ul {
   -webkit-transition-delay: 0.1s, 0s;
   transition: visibility 0s linear 0.1s, opacity 0.1s linear;
 }
-nav li.active > ul {
+
+nav li:hover > ul {
   visibility: visible;
   opacity: 1;
   -moz-transition-delay: 0s;
@@ -258,7 +256,6 @@ div.container-sub-title {
 	margin-right: 5%;
 	padding-left: 20px;
 	padding-right: 20px;
-/*	background: red;*/
 }
 
 .mt {
@@ -339,8 +336,8 @@ div.container-sub-title {
 	width: 35%;
 	float: left;
 	text-align: right;
-	padding: 20px;
-/*	background: red;*/
+	padding: 20px 20px 100px 20px;
+	background: rgba(115, 174, 222, 0.3);
 }
 
 div.welcome-text {
@@ -371,7 +368,6 @@ div.welcome-text-about {
 	float: right;
 	padding: 20px;
 	font-size: 22px;
-	background: linear-gradient(to right,#fff 0%,#ccc 100%);
 }
 div.welcome-text-about ul li {
 	font-size: 16px;
@@ -400,6 +396,7 @@ p.text1 {
 	ul.text2-services {
 		list-style-type: square;
 		margin-left: 40px;
+		padding-bottom: 40px;
 	}
 
 	p.text3 {
@@ -442,9 +439,9 @@ p.text1 {
 	height: 300%;
 }
 .container-3:nth-child(2n) {
-	width: 34%;
-	margin-left: 2%;
-	margin-right: 4%;
+	width: 30%;
+	margin-left: 5%;
+	margin-right: 5%;
 	margin-top: 40px;
 	height: 300%;
 }
@@ -496,71 +493,15 @@ p.text1 {
 .container-3 ul li a:hover, .container-services ul li a:hover {
 	color: #fff;
 }
-.container-3 img {
-	vertical-align: middle;
-	max-width: 100%;
-}
 .click {
 	text-transform: uppercase;
 	text-decoration: underline;
 }
 
-/* Subscribe	*/																   
-/***********************************************/
-
-.subscribe {
-	background: #336699;
-	min-height: 200px;
-}
-h5.subscribe-title {
-	color: #fff;
-	letter-spacing: 1px;
-	font-size: 20px;
-	font-weight: 300;
-/*	margin-bottom: 20px;*/
-}
-p.subscribe-text {
-	color: #F0F2F1;
-	font-size: 0.8rem;
-	letter-spacing: 1px;
-}
-
-form {
-	position: relative;
-}
-.container--w30tar
-input[type="text"] {
-	border: 1px solid #F0F2F1;
-	padding: 10px 20px;
-	width: 100%;
-	outline: none;
-	color: #777;
-	margin-top: 30px;
-	letter-spacing: 1px;
-	float: left;
-}
-.container--w30tar
-input[type="submit"] {
-	width: 50px;
-	height: 40px;
-	position: absolute;
-	border: none;
-	outline: none;
-	display: inline-block;
-	background: url("images/envelope1.png") no-repeat 0px 0px;
-	right: 15px;
-	top: 34px;
-}
-
-.container--w30tar
-input[type="submit"]:hover {
-	background: url("images/envelope.png") no-repeat 0px 0px;
-}
-
 /* Compliance News */
 /**********************************************/
 
-.disclaimer {
+/*.disclaimer {
 	font-style: italic;
 	color: #73AEDE;
 	font-size: 0.8rem;
@@ -573,7 +514,7 @@ input[type="submit"]:hover {
 .disclaimer a:hover {
 	color: #fff;
 }
-
+*/
 
 /* Contact */													   
 /***********************************************/
@@ -639,49 +580,56 @@ p.text-contact2 {
 .footer {
 	font-family: 'Open Sans', sans-serif;
 	background: #333;
-	min-height: 220px;
 	border-top: 1px solid #000;
 	padding: 20px;
 	display: inline-block;
 	width: 100%;
 }
-.container-footer20 {
-	width: 20%;
-	min-height: 150px;
-	float: left;
-	display: inline-block;
-}
-.container-footer30 {
-	float: left;
-	width: 30%;
-	display: inline-block;
-}
+
 .footer-title {
 	color: #999;
 	font-weight: 700;
-	font-size: 1.1rem;
+	font-size: 0.75rem;
 	text-transform: uppercase;
-	padding: 10px 30px;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-title a {
+	color: #fff;
+}
+.footer-title a:hover {
+	color: #73AEDE;
 }
 
-ul.footer-list {
-	padding: 0 0 30px 30px;
+.footer-list {
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
 	letter-spacing: 1px;
 	color: #999;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 0.7rem;
+	text-align: center;
+	border-top: 1px solid rgba(255,255,255,.1);
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }
 
-ul.footer-list li {
+.footer-list li {
 	padding-left: 0;
 	list-style-type: none;
 	line-height: 1.5rem;
+	display: inline-block;
 }
 
-ul.footer-list li a {
+.footer-list a {
 	color: #999;
 }
-ul.footer-list li a:hover {
+.footer-list a:hover {
 	color: #73AEDE;
 }
 .bold {
@@ -689,13 +637,9 @@ ul.footer-list li a:hover {
 }
 
 .copyright {
-	font-size: 0.8rem; 
-	text-align: center;
 	color: #777;
-	background: #333;
-	padding: 10px 0;
-	border-top: 1px solid rgba(255,255,255,.1);
-	clear: both;
+	text-transform: none;
+	letter-spacing: none;
 }
 
 
