@@ -62,19 +62,19 @@ img {
 	padding-top: 100px;
 }
 .bg1 {
-	background: url("../images/011285662_prevstill.jpeg") no-repeat 0 0 fixed;
+	background: url("images/011285662_prevstill.jpeg") no-repeat 0 0 fixed;
 	min-height: 700px;
 	height:70vh;
 }
 .bg2 {
-	background: url("../images/bg2.jpg") no-repeat 0 0 fixed;
+	background: url("images/bg2.jpg") no-repeat 0 0 fixed;
 }
 .bg3 {
-	background: url("../images/bg3.jpg") no-repeat 0 0 fixed;
+	background: url("images/bg3.jpg") no-repeat 0 0 fixed;
 	background-size: cover;
 }
 .bg4 {
-	background: url("../images/bg4.jpg") no-repeat 0 60px fixed;
+	background: url("images/bg4.jpg") no-repeat 0 60px fixed;
 }
 .home-imgs h3 {
 	font-family: 'Open sans', sans-serif;
@@ -443,7 +443,7 @@ ul.text2 {
 }
 .welcome-text-services {
 	font-size: 1.4rem;
-	padding-top: 2.5rem;
+padding-top: 2.5rem;
 }
 .container-3 {
 	width: 30%;
@@ -750,7 +750,7 @@ p.text-contact2 {
     }
     .menu a#pull:after {
       content: "";
-      background: url("../images/nav-icon.png") no-repeat;
+      background: url("images/nav-icon.png") no-repeat;
       width: 30px;
       height: 30px;
       display: inline-block;
