@@ -62,19 +62,19 @@ img {
 	padding-top: 100px;
 }
 .bg1 {
-	background: url("../images/011285662_prevstill.jpeg") no-repeat 0 0 fixed;
+	background: url("images/011285662_prevstill.jpeg") no-repeat 0 0 fixed;
 	min-height: 700px;
 	height:70vh;
 }
 .bg2 {
-	background: url("../images/bg2.jpg") no-repeat 0 0 fixed;
+	background: url("images/bg2.jpg") no-repeat 0 0 fixed;
 }
 .bg3 {
-	background: url("../images/bg3.jpg") no-repeat 0 0 fixed;
+	background: url("images/bg3.jpg") no-repeat 0 0 fixed;
 	background-size: cover;
 }
 .bg4 {
-	background: url("../images/bg4.jpg") no-repeat 0 60px fixed;
+	background: url("images/bg4.jpg") no-repeat 0 60px fixed;
 }
 .home-imgs h3 {
 	font-family: 'Open sans', sans-serif;
@@ -288,7 +288,6 @@ div.container-sub-title {
 }
 
 .container--w70tal h3 {
-	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.8rem;
 }
@@ -375,44 +374,42 @@ div.welcome-text-about {
 	position: relative;
 	width: 65%;
 	float: right;
-	padding: 20px 0 20px 40px;
+	padding: 20px;
 	font-size: 1.375rem;
 }
 
 div.welcome-text-about ul li {
 	list-style-type: square;
-	font-size: 1rem;
+}
+div.welcome-text-services {
+	padding-left: 200px;
+	padding-right: 200px;
+	margin-bottom: 50px;
 }
 p.text1 {
-	font-size: 1rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 30px;
 	color: #212647;
 }
-ul.text2 {
-	margin-top: 10px;
-	line-height: 1.8rem;
-	color: #212647;
-	list-style-type: decimal;
-	margin-left: 40px;
-	font-size: 1.1rem;
-}
+	ul.text2 {
+		margin-top: 10px;
+		line-height: 1.8rem;
+		color: #212647;
+		list-style-type: decimal;
+		margin-left: 40px;
+	}
 	ul.text2-services {
 		list-style-type: square;
 		margin-left: 40px;
 		padding-bottom: 40px;
 	}
 
-	.text3 {
+	p.text3 {
 		font-style: italic;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		letter-spacing: 1px;
 	}
-	.text3 a {
-		color: #0069AA;
-	}
-
 	.text3-about {
 		font-family: 'Lato', sans-serif;
 		font-size: 1.1rem;
@@ -440,10 +437,6 @@ ul.text2 {
 	width: 100%;
 	margin-top: 50px;
 	height: 450px;
-}
-.welcome-text-services {
-	font-size: 1.4rem;
-	padding-top: 2.5rem;
 }
 .container-3 {
 	width: 30%;
@@ -473,7 +466,13 @@ ul.text2 {
 	font-weight: 400;
 	color: #0069AA;
 }
-
+.container-services ul li {
+	font-size: 0.9rem;
+	padding: 0px;
+	list-style: none;
+	font-weight: 400;
+	color: #0069AA;
+}
 .container-3 ul li:before, .container-services ul li:before {  /*fa-check-square*/
   content: "\f14a";
   font-family: 'FontAwesome';
@@ -750,7 +749,7 @@ p.text-contact2 {
     }
     .menu a#pull:after {
       content: "";
-      background: url("../images/nav-icon.png") no-repeat;
+      background: url("images/nav-icon.png") no-repeat;
       width: 30px;
       height: 30px;
       display: inline-block;
