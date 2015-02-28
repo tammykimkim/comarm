@@ -10,7 +10,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 html, body {
 	font-family: 'Lato', sans-serif;
-	font-size: 100%;
+	font-size: 16px;
 	background: #fff;
 	-webkit-font-smoothing: antialiased;
 }
@@ -78,7 +78,7 @@ img {
 }
 .home-imgs h3 {
 	font-family: 'Open sans', sans-serif;
-	font-size: 36px;
+	font-size: 2.25rem;
 	line-height: 1rem;
 	color: #fff;
 	padding-left: 100px;
@@ -172,7 +172,7 @@ nav .has-subnav > a:after {
   content: "▾";
   display: block;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 0;
   position: absolute;
   right: 5px;
@@ -238,15 +238,15 @@ nav li:hover > ul {
 }
 .title h2 {
 	color: #0069AA;
-	font-size: 45px;
+	font-size: 2.8125rem;
 }
 .title span {
-	font-size: 30px;
+	font-size: 1.875rem;
 }
 div.container-sub-title {
 	text-align: right;
 	font-weight: 600;
-	font-size: 0px;
+	font-size: 0;
 	color: red;
 	text-shadow: 1px 1px 1px #333;
 	padding-top: 200px;
@@ -288,7 +288,6 @@ div.container-sub-title {
 }
 
 .container--w70tal h3 {
-	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.8rem;
 }
@@ -316,12 +315,12 @@ div.container-sub-title {
 	color: #777;
 }
 .button {
-	font-size: 18px;
+	font-size: 1.1rem;
 	margin: 10px 20px;
 	display: inline-block;
 	color: #fff;
 	text-align: center;
-	padding: 20px 40px;
+	padding: 20px;
 	background: #73AEDE;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -339,7 +338,14 @@ div.container-sub-title {
 	float: left;
 	text-align: right;
 	padding: 20px 20px 100px 20px;
-	background: rgba(115, 174, 222, 0.3);
+	border: 1px solid #F0F2F1;
+	background-color: rgba(115, 174, 222, 0.5);
+}
+.about-photos:hover {
+	border: 1px solid #0069AA;
+-webkit-box-shadow: -4px 3px 15px 0px rgba(50, 50, 50, 0.6);
+-moz-box-shadow:    -4px 3px 15px 0px rgba(50, 50, 50, 0.6);
+box-shadow:         -4px 3px 15px 0px rgba(50, 50, 50, 0.6);
 }
 
 div.welcome-text {
@@ -348,7 +354,7 @@ div.welcome-text {
 
 p.welcome-text {
 	padding-top: 0px;
-	font-size: 18px;
+	font-size: 1.1rem;
 }
 .pt5 {
 	padding-top: 5px;
@@ -360,7 +366,7 @@ p.welcome-text {
 	padding-bottom: 30px;
 }
 .welcome-text {
-	font-size: 20px;
+	font-size: 1.4rem;
 	color: #0069AA;
 }
 div.welcome-text-about {
@@ -369,10 +375,10 @@ div.welcome-text-about {
 	width: 65%;
 	float: right;
 	padding: 20px;
-	font-size: 22px;
+	font-size: 1.375rem;
 }
+
 div.welcome-text-about ul li {
-	font-size: 16px;
 	list-style-type: square;
 }
 div.welcome-text-services {
@@ -381,14 +387,12 @@ div.welcome-text-services {
 	margin-bottom: 50px;
 }
 p.text1 {
-	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 30px;
 	color: #212647;
 }
 	ul.text2 {
-		font-size: 16px;
 		margin-top: 10px;
 		line-height: 1.8rem;
 		color: #212647;
@@ -407,17 +411,17 @@ p.text1 {
 		letter-spacing: 1px;
 	}
 	.text3-about {
-		font-style: italic;
-		font-size: 1.2rem;
-		letter-spacing: 1px;
+		font-family: 'Lato', sans-serif;
+		font-size: 1.1rem;
+/*		letter-spacing: 1px;*/
 		padding-top: 30px;
 		color: #0069AA;
 	}
 	ul.text3-about li {
-		font-size: 16px;
 		list-style-type:square;
 		font-style: none;
 		margin-left: 40px;
+		line-height: 1px;
 	}
 
 	p.text3 a {
@@ -450,20 +454,20 @@ p.text1 {
 .container-3 h4, .container-services h4 {  
 	margin-top: 25px;
 	margin-bottom: 10px;
-	font-size: 22px;
+	font-size: 1.4rem;
 }
 .container-3 ul, .container-services ul {
 	padding-left: 0;
 }
 .container-3 ul li {
-	font-size: 15px;
+	font-size: 0.9rem;
 	padding: 17px;
 	list-style: none;
 	font-weight: 400;
 	color: #0069AA;
 }
 .container-services ul li {
-	font-size: 15px;
+	font-size: 0.9rem;
 	padding: 0px;
 	list-style: none;
 	font-weight: 400;
@@ -531,7 +535,6 @@ h3.contact-co {
 }
 
 .text-contact {
-	font-size: 16px;
 	line-height: 1.6rem;
 	font-weight: 400;
 	color: #FA9E25;
@@ -539,7 +542,6 @@ h3.contact-co {
 }
 
 p.text-contact2 {
-	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 400;
 	padding-bottom: 8px;
@@ -792,5 +794,8 @@ p.text-contact2 {
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
+
+/*font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Oswald', sans-serif;*/
 
 
